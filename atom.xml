@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bikini Bottom</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-30T13:03:39.370Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Bob</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从今天起我的个人博客建立了</title>
+    <link href="http://yoursite.com/2020/04/30/first/"/>
+    <id>http://yoursite.com/2020/04/30/first/</id>
+    <published>2020-04-29T16:53:39.000Z</published>
+    <updated>2020-04-30T13:03:39.370Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问自己的一些问题&quot;&gt;&lt;a href=&quot;#问自己的一些问题&quot; class=&quot;headerlink&quot; title=&quot;问自己的一些问题&quot;&gt;&lt;/a&gt;&lt;center&gt;问自己的一些问题&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;为什么建立自己的博客&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="第一篇文章" scheme="http://yoursite.com/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+</feed>
