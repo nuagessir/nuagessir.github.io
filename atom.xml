@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-30T13:03:39.370Z</updated>
+  <updated>2020-05-17T11:10:27.900Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>asop1</title>
+    <link href="http://yoursite.com/2020/05/10/asop1/"/>
+    <id>http://yoursite.com/2020/05/10/asop1/</id>
+    <published>2020-05-10T12:33:28.000Z</published>
+    <updated>2020-05-17T11:10:27.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#ASOP下载及编译&lt;br&gt;##官方方案&lt;br&gt;#####安装Repo&lt;br&gt;1.首先确保你的主目录下有一个&lt;code&gt;bin/&lt;/code&gt;文件夹,并且包含在你的路径中&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="ASOP" scheme="http://yoursite.com/tags/ASOP/"/>
+    
+  </entry>
   
   <entry>
     <title>从今天起我的个人博客建立了</title>

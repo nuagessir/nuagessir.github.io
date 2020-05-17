@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    从今天起我的个人博客建立了 |  Bikini Bottom
+    asop1 |  Bikini Bottom
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -42,7 +42,7 @@
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="post-first" class="article article-type-post" itemscope
+  <article id="post-asop1" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -50,7 +50,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  从今天起我的个人博客建立了
+  asop1
 </h1>
  
 
@@ -59,8 +59,8 @@
 
     
     <div class="article-meta">
-      <a href="/2020/04/30/first/" class="article-date">
-  <time datetime="2020-04-29T16:53:39.000Z" itemprop="datePublished">2020-04-30</time>
+      <a href="/2020/05/10/asop1/" class="article-date">
+  <time datetime="2020-05-10T12:33:28.000Z" itemprop="datePublished">2020-05-10</time>
 </a>
       
       
@@ -70,7 +70,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">273</span>
+            <span class="post-count">910</span>
         </span>
     </span>
 
@@ -79,7 +79,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">3 min</span>
         </span>
     </span>
 </div>
@@ -90,8 +90,6 @@
 
     
     
-    <div class="tocbot"></div>
-
 
 
 
@@ -104,15 +102,47 @@
       
 
       
-      <h1 id="问自己的一些问题"><a href="#问自己的一些问题" class="headerlink" title="问自己的一些问题"></a><center>问自己的一些问题</center></h1><h2 id="为什么建立自己的博客"><a href="#为什么建立自己的博客" class="headerlink" title="为什么建立自己的博客?"></a>为什么建立自己的博客?</h2><blockquote>
-<p>俗话说得好，一个不会写博客的程序员不是好的程序员。 首先，可以通过博客让大家了解自己，提升自己在行业内的知名度。 其次书写博客是为了给自己的学习留下痕迹，在对自己所学进行梳理的同时，如果能给别人带来一些启发那就更好了。  </p>
+      <p>#ASOP下载及编译<br>##官方方案<br>#####安装Repo<br>1.首先确保你的主目录下有一个<code>bin/</code>文件夹,并且包含在你的路径中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~&#x2F;bin</span><br><span class="line">PATH&#x3D;~&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
+<p>2.下载Repo启动器，并且设置其为可执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;storage.googleapis.com&#x2F;git-repo-downloads&#x2F;repo &gt; ~&#x2F;bin&#x2F;repo</span><br><span class="line">chmod a+x ~&#x2F;bin&#x2F;repo</span><br></pre></td></tr></table></figure>
+<p>通过这个地址下载的Repo适用于装有Python3.6及更高的系统，如果系统只有python2，可以使用下列地址下载支持Python2.7的Repo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;storage.googleapis.com&#x2F;git-repo-downloads&#x2F;repo-1 &gt; ~&#x2F;bin&#x2F;repo</span><br><span class="line">chmod a+x ~&#x2F;bin&#x2F;repo</span><br></pre></td></tr></table></figure>
+
+<p>#####初始化Repo客户端<br>1.创建一个空目录来存放ASOP项目，对于MacOS需要创建一块区分大小写的镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir WORKING_DIRECTORY</span><br><span class="line">cd WORKING_DIRECTORY</span><br></pre></td></tr></table></figure>
+<p>2.使用绑定了Google账号的邮箱地址配置Git</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;you@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>3.在工作目录下运行<code>repo init</code>获得最新版本的Repo,需要为清单指定一个网址，该<code>manifest</code>用于指定Android源代码中的各个代码库应该位于工作目录的存放位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">repo init -u https:&#x2F;&#x2F;android.googlesource.com&#x2F;platform&#x2F;manifest</span><br></pre></td></tr></table></figure>
+<p>可以使用<code>-b</code>指定特定的分支，分支列表请参考官网<a href="https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds" target="_blank" rel="noopener">https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds</a><br>初始化成功后，你应该在工作目录下看到一个.repo目录，里面存放清单文件。<br>#####下载源码<br>接下来运行<code>repo sync</code>下载源代码  </p>
+<p>##国内用户方案<br>对于国内的用户来说，由于源码非常大上述方法基本是不可行的。此时推荐使用  <a href="https://lug.ustc.edu.cn/wiki/mirrors/help/aosp" target="_blank" rel="noopener">科大镜像</a>或者<a href="https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/?C=M&O=A" target="_blank" rel="noopener">清华镜像</a>，具体的使用方法连接里面有我就不再赘述.</p>
+<p>#ASOP的编译</p>
+<ul>
+<li><p>首先 source一下ASOP目录下的envsetup.sh 之后可以通过脚本中的方法进行操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ASOP_Path&#x2F;build&#x2F;envsetup.sh</span><br></pre></td></tr></table></figure></li>
+<li><p>然后使用<code>lunch</code>选择需要编译的目标，在命令行输入（需要切换到管理员）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lunch</span><br></pre></td></tr></table></figure>
+<p>然后会出现一个版本列表，选择需要的版本输入对应编号即可，<code>aosp_arm-eng</code>表示针对模拟器进行完整编译，并启用所有调试功能  </p>
+</li>
+<li><p>编译代码<br>使用<code>m</code>编译所有内容，可以使用<code>-jN</code>参数指定<code>N</code>为并行处理任务数。如果你没有提供<code>-j</code>参数编译系统将自动选择最合适的并行任务数</p>
+</li>
+</ul>
+<p>#问题处理<br>###Mac环境问题<br>1.安装Xcode命令行工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<p>2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git gnupg2</span><br></pre></td></tr></table></figure>
+<p>3.设置文件描述符上限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># set the number of open files to be 1024</span><br><span class="line">ulimit -S -n 1024</span><br></pre></td></tr></table></figure>
+<p>我的mac在设置为1024后依然出现打开文件超过上限的问题，所以设成了2048  </p>
+<p>4.创建磁盘印象用于存放ASOP  </p>
+<blockquote>
+<p>首先,使用<code>磁盘工具-&gt;文件-&gt;映像-&gt;新建空白印象</code>其中格式选择<code>Mac OS扩展(区分大小写，日志式)</code>如果需要完整编译整个ASOP大小选择<code>250G</code>目前最新的实测<code>200G</code>不够.  </p>
 </blockquote>
-<h2 id="为什么选择比奇堡这个名字"><a href="#为什么选择比奇堡这个名字" class="headerlink" title="为什么选择比奇堡这个名字?"></a>为什么选择比奇堡这个名字?</h2><blockquote>
-<p>海绵宝宝所居住的这个比奇堡，是个快乐的地方，希望自己的博客具有足够的质量可以帮助大家解决问题、消除烦恼，也希望可以通过更加轻松愉快的表达把技术问题变得不那么枯燥。</p>
-</blockquote>
-<h2 id="为什么选择蟹老板作为头像？"><a href="#为什么选择蟹老板作为头像？" class="headerlink" title="为什么选择蟹老板作为头像？"></a>为什么选择蟹老板作为头像？</h2><blockquote>
-<p>因为我和蟹老板一样热爱💰。蟹老板对女儿的爱，可以让他放弃自己热爱的金钱。希望自己在挣钱的同时不要忘记给家人足够的爱与陪伴。</p>
-</blockquote>
+<p>可以通过在<code>.bashrc</code>或者<code>.zshrc</code>中加入方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># mount the android file image</span><br><span class="line">mountAndroid() &#123; </span><br><span class="line">  hdiutil attach ~&#x2F;Documents&#x2F;ASOP.dmg -mountpoint &#x2F;Volumes&#x2F;ASOP; </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># unmount the android file image</span><br><span class="line">umountAndroid() &#123;</span><br><span class="line"> hdiutil detach &#x2F;Volumes&#x2F;ASOP; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>方便快速载入映像</p>
+<p>###编译出现文件缺失或者module找不到的问题<br>可能是下载不全导致。<a href="https://cs.android.com" target="_blank" rel="noopener">https://cs.android.com</a>可在此网站找到缺失的文件位置，然后前往<a href="https://android.googlesource.com/?format=HTML" target="_blank" rel="noopener">https://android.googlesource.com/?format=HTML</a>找到对应的文件进行下载。<a href="https://pan.baidu.com/s/1xIYQKBGL4xk4qq0wu7ZbDw" target="_blank" rel="noopener">这里</a>有我上传的<code>prebuilt/tool</code>的压缩包,  密码:15x5。</p>
 
       
       <!-- reward -->
@@ -167,14 +197,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/30/first/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/05/10/asop1/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" rel="tag">第一篇文章</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ASOP/" rel="tag">ASOP</a></li></ul>
 
 
     </footer>
@@ -185,15 +215,11 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/05/10/asop1/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            asop1
-          
-        </div>
-      </a>
     
+      <a href="/2020/04/30/first/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">从今天起我的个人博客建立了</div>
+      </a>
     
   </nav>
 
