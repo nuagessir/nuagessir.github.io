@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-17T08:44:30.383Z</updated>
+  <updated>2020-04-30T13:03:39.370Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,21 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>jvm_lock</title>
-    <link href="http://yoursite.com/2020/05/17/jvm-lock/"/>
-    <id>http://yoursite.com/2020/05/17/jvm-lock/</id>
-    <published>2020-05-17T08:44:30.000Z</published>
-    <updated>2020-05-17T08:44:30.383Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>从今天起我的个人博客建立了</title>
