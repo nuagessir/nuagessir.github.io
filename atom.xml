@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-11-22T08:36:36.328Z</updated>
+  <updated>2020-11-22T11:09:14.981Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HandlerThread</title>
+    <link href="http://yoursite.com/2020/11/22/HandlerThread/"/>
+    <id>http://yoursite.com/2020/11/22/HandlerThread/</id>
+    <published>2020-11-22T11:09:14.000Z</published>
+    <updated>2020-11-22T11:09:14.981Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#HandleThread 源码阅读&lt;/p&gt;
+&lt;p&gt;###首先看一下成员变量&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Android,SourceCode" scheme="http://yoursite.com/tags/Android-SourceCode/"/>
+    
+  </entry>
   
   <entry>
     <title>AOSP下载及编译</title>
