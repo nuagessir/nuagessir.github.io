@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-11-22T11:09:14.981Z</updated>
+  <updated>2020-11-22T11:14:42.726Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>HandlerThread</title>
     <link href="http://yoursite.com/2020/11/22/HandlerThread/"/>
     <id>http://yoursite.com/2020/11/22/HandlerThread/</id>
-    <published>2020-11-22T11:09:14.000Z</published>
-    <updated>2020-11-22T11:09:14.981Z</updated>
+    <published>2020-11-22T11:14:42.000Z</published>
+    <updated>2020-11-22T11:14:42.726Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,7 @@
       
         
         
-          &lt;p&gt;#HandleThread 源码阅读&lt;/p&gt;
-&lt;p&gt;###首先看一下成员变量&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+          &lt;h1 id=&quot;HandleThread-源码阅读&quot;&gt;&lt;a href=&quot;#HandleThread-源码阅读&quot; class=&quot;headerlink&quot; title=&quot;HandleThread 源码阅读&quot;&gt;&lt;/a&gt;HandleThread 源码阅读&lt;/h1&gt;&lt;h3
         
       
     
